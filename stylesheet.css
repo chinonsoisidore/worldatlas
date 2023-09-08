@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  display: inline-flex;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(5, 85, 206);
+}
+
+.nav .logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav .logo img {
+  width: 40px;
+  padding-top: 3px;
+  padding-left: 20px;
+}
+
+.nav .logo h3 {
+  padding-left: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.nav .geo ul {
+  float: left;
+  padding-left: 20px;
+  padding-top: 23px;
+}
+
+.nav .geo ul li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav .geo ul li a {
+  color: white;
+  font-family: sans-serif;
+  padding: 5px 13px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav .geo ul li a:hover {
+  color: rgb(234, 224, 224);
+  font-size: 15px;
+}
+
+.nav .geo ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 200px;
+  padding-left: 10px;
+  margin-top: 20px;
+  padding-top: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.nav .geo ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav .geo ul li ul li {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(151, 151, 167);
+}
+
+.nav .geo ul li ul li a {
+  color: rgb(5, 85, 206);
+  padding-left: 5px;
+}
+
+.nav .geo ul li ul li a:hover {
+  color: rgb(4, 57, 135);
+}
+
+.font ul {
+  display: inline-flex;
+  padding-left: 55px;
+  list-style: none;
+}
+
+.font ul li {
+  padding-right: 12px;
+  padding-top: 15px;
+}
+
+.font ul li i {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 7px 13px;
+}
+
+.font ul li i:hover {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(5, 85, 206);
+  background-color: white;
+  padding: 7px 13px;
+  border-radius: 20px;
+}
+
+.font1 ul {
+  padding-left: 35px;
+  list-style: none;
+}
+
+.font1 ul li {
+  padding-top: 20px;
+}
+
+.font1 ul li i {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+#map .world-map {
+  padding: 80px 30px 30px 30px;
+}
+
+.click h3{
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.click h3 a{
+ text-decoration: none;
+ color: black;
+}
